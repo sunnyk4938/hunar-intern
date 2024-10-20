@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Tech brain</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="registration.html">REGISTER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+    
+    
+<!---------- course ----------->
+    
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>HTML, CSS, JavaScript, DSA, Python, Frontend Development, Backend Development, Full Stack Web Development.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Our intermediate courses focus on building foundational skills in web development. You will learn HTML, CSS, and basic JavaScript, enabling you to create responsive websites and understand the structure of modern web applications. These courses are perfect for beginners looking to enter the tech world.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Degree-level courses are designed for those aiming to deepen their understanding of web development. You will dive into advanced JavaScript, Data Structures and Algorithms (DSA), and backend technologies like Node.js, along with database management. These courses prepare you for more complex projects and professional development roles.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Our postgraduate courses are for individuals looking to master full-stack web development. You will work on end-to-end web solutions, including frontend frameworks like React or Angular, backend development, and cloud-based deployment. These courses are aimed at preparing you for leadership roles in tech companies or advanced research.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Facilities ---------->
+    
+    <section class="facility">
+        <h1>Our Facilities</h1>
+        <p>Facilities includes labs, library, letcher halls, residence halls, student centers.</p>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="images/library.png">
+                    <h3>Best Class Library</h3>
+                    <p>Collections of books, journals, magazines, novels, newspapers, and digital resources such as e-books, audiobooks.</p>
+                </div>
+                <div class="facility-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>Fields for sports like football, soccer, baseball, basketball, and tennis.</p>
+                </div>
+                <div class="facility-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>We provide you tasty and healthy foods that's nutritions and provides energy while also tasting good.</p>
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Our college is the safest and best place we feel safe where. The library is well maintained . And especially our department and teachers provide us with the best updated knowledge. <br>Practicals are very well performed which is most important thing for a science student.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by Tech brain</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
